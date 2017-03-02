@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <style type="text/css">
+        .fan{width: 120px;height:120px;background: #000000; overflow: hidden;position: relative;}
+        .fan1{display: block;width:100px;height: 100px;  position: absolute;top:0px; left: 0px;z-index:100;}
+        .fan2{display: block;width:0px;height: 100px;  position: absolute;top:0px; left: 0px;z-index:99;}
+    </style>
+</head>
+<body>
+    <div class="fan">
+            <img class="fan1" src="images/qq.png"/>
+            <img class="fan2" src="images/erweima.png"/>
+    </div>
+    <div class="fan">
+        <img class="fan1" src="images/qq.png"/>
+        <img class="fan2" src="images/erweima.png"/>
+    </div>
+    <div class="fan">
+        <img class="fan1" src="images/qq.png"/>
+        <img class="fan2" src="images/erweima.png"/>
+    </div>
+<script type="text/javascript">
+    $(function () {
+        var _1 = $(".fan1");
+        var _2 = $(".fan2");
+        var w = _1.width();
+        var w_half = w/2;
+        var abc = 0;
+       _2.css({width:"0px",left:w_half});
+        $(".fan").hover(function(){
+            $(this).find(".fan1").animate({width:"0px",left:w_half},100,function(){
+                $(this).parent().find(".fan2").animate({width:w,left:"0px"},100,function () {
+                    return abc = 1;
+                });
+            });
+        },function(){setTimeout(function () {
+            $(this).find(".fan2").animate({width:"0px",left:w_half},80,function(){
+                $(this).parent().find(".fan1").animate({width:w,left:"0px"},100, function () {
+                    return abc = 0;
+                });
+            });
+        },200)
+
+        });
+        
+    /*    $(".fan").mouseover(function abcde(){
+         if (abc == 0){
+         _1.animate({width:"0px",left:w_half},300,function(){
+         _2.animate({width:w,left:"0px"},300,function(){return abc = 1;});
+         });
+         }else{
+         abcde();
+         }
+         });
+         $(".fan").mouseout(function abcd(){
+         if (abc == 1){
+         _2.animate({width:"0px",left:w_half},300,function(){
+         _1.animate({width:w,left:"0px"},300, function () {console.log(abc);
+         return abc = 0;
+         });
+         });
+         }else{
+         abcd();
+         }
+         });*/
+
+
+    });
+</script>
+</body>
+</html>

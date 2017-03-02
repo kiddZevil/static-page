@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="overflow: hidden;">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登录</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+
+</head>
+<body style="overflow: hidden;">
+ <img src="images/login_bg.jpg" class="login_bg">
+    <div class="login_box">
+        <div style="height: 68px;"></div>
+        <div class="login_title"></div>
+        <div class="unlock">
+            <div id="login_key" class="unlock_key ">
+
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+    $(function () {
+        // 添加开关
+        var flag = false;
+        // 拖拽
+        $(".unlock_key").mousedown(function(i){
+            $(this).addClass("light");
+
+            flag = true; // 打开
+            // 获取父类的div（需要被拖动的层）
+            var dragbox = $(this);
+            var x = i.clientX;
+            // 当前距离左顶点的位置
+
+            $(document).mousemove(function(e){
+                // 如果是打开状态
+                if(flag){
+                    var x1 = e.clientX;
+                    // 计算坐标位置
+                    var _left = x1 - x;
+                    //判断滑动距离
+                    if(_left>=140){
+                        dragbox.css({
+                            left:140
+                        })
+                    } else if(_left<-12){
+                        dragbox.css({
+                            left:-12
+                        })
+                    }
+                    else {
+                        dragbox.css({
+                            left:_left
+                        })
+                    }
+
+                }
+            }).mouseup(function(){
+                flag = false;
+                // 关闭
+                dragbox.css({
+                    left:-12
+                });
+                dragbox.removeClass("light");
+
+            });
+
+        });
+        function abc (){
+            var w =$(window).height();
+            $(".login_bg").height(w);
+        }
+        abc ();
+        $(window).resize(
+                function () {
+                    abc();
+                }
+        );
+    });
+</script>
+</body>
+</html>

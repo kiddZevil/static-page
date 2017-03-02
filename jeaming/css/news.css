@@ -1,0 +1,51 @@
+.left{ width:820px; float:left;}
+.right{ width:340px; float:right;}
+
+.hot{ margin-top:20px;}
+.hot_title{ height:40px; line-height:40px; background:#0451a1; padding:0px 20px; color:#fff; font-size:16px;}
+.hot_title>a{ float:right; color:#fff; font-size:16px;}
+.hot_title>a:hover{ text-decoration:underline;}
+.hot_con{ padding-top:20px;}
+.hot_con ul.hotlist>li{ height:34px; line-height:34px;}
+.hot_con ul.hotlist>li>a{ float:left;display: inline-block;width: 228px;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;}
+.hot_con ul.hotlist>li>a:hover{ color:#386ec3;}
+.hot_con ul.hotlist>li>span{display: inline-block; float:right; color:#666;}
+
+/*内容页*/
+.neirong{}
+.neirong_title{ border-bottom:1px dashed #c8c8c8;}
+.neirong_title h1{ font-size:28px; color:#000; text-align:center;}
+.neirong_title>.laiyuan{ font-size:16px; color:#999; text-align:center; height:64px; line-height:64px;}
+.neirong_title>.laiyuan>span{ color:#999; margin-right:20px; font-size:16px;}
+.neirong_title>.laiyuan>a{ color:#999; font-size:16px;}
+.neirong_title>.laiyuan>a:hover{ text-decoration:underline;}
+.zhengwen{ margin-top:20px;}
+.zhengwen p{ line-height:32px; text-indent:2em; color:#666;}
+.zhengwen .center{ text-align:center;margin-bottom: 10px;}
+
+/*right>bottom*/
+.zhiwei>li{ border:1px solid #d6d6d6; border-bottom:2px solid #d6d6d6; padding:15px; margin-bottom:20px;}
+.zhiwei>li>p{ line-height:22px; color:#999;}
+.zhiwei>li>p>em{ color:#fd6440;}
+.zhiwei>li>.job_name{ line-height:32px;}
+.zhiwei>li>.job_name>a{ font-size:16px; color:#333;}
+.zhiwei>li>.job_name>a:hover{ text-decoration:underline;}
+.zhiwei>li>.job_name>.add{ font-size:14px; color:#999; margin-left:20px;}
+.zhiwei>li>.job_name>.add>a{ color:#999;}
+.zhiwei>li>.job_name>.add>a:hover{ text-decoration:underline;}
+
+/*index*/
+.news_div{ margin-top:20px;}
+.news_div_title{ height:40px; line-height:40px; background:#386ec3; padding:0px 20px; color:#fff; font-size:16px;}
+.news_div_title>a{ float:right; color:#fff; font-size:16px;}
+.news_div_title>a:hover{ text-decoration:underline;}
+.news_div_con>li{ padding:20px 0; border-bottom:1px solid #e4e4e4; overflow:hidden;}
+.news_li_title{ height:40px;}
+.news_li_title>a{ font-size:18px; color:#000;}
+.news_li_title>a:hover{ color:#386ec3;}
+.news_li_con>.news_img{ float:left;}
+.news_li_con>.news_img>img{ width:188px; height:106px;}
+.news_li_con>.news_brief{ float:right; width:600px; height:70px; line-height:26px; color:#666;}
+.news_li_con>.news_source{ float:right; width:600px; color:#666;}
+.news_li_con>.news_source>a{ color:#666;}
+.news_li_con>.news_source>a:hover{ text-decoration:underline;}

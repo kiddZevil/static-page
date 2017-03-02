@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>企业基本信息1</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="css/common.css" type="text/css" rel="stylesheet"/>
+    <link href="css/frame.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+<div class="index_top user fs12">
+    <div class="wrapper">
+        <p class="float-left">欢迎您 <span class="red">琴琴消防有限公司</span> | 退出</p>
+        <ul class="float-right">
+            <li><a class="red" href="#">首页</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">卖家中心</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">联系客服</a></li>
+        </ul>
+    </div>
+</div>
+<div class="user_header over-hidden">
+
+    <div class="logo pd0-10 inline-block" >
+        <img src="images/logo.png" style="vertical-align: middle"alt="华晨消防商城">
+    </div>
+    <div class="fs20 logo_2 pd0-10 inline-block">购物车</div>
+
+</div>
+<div class="nav">
+    <!--<div style="width: 1026px; margin:0 auto">
+        <ul>
+            <li><a href="">我的首页</a></li>
+            <li class="this"><a href="">企业中心</a></li>
+            <li><a href="">订单中心</a></li>
+            <li><a href="">商品中心</a></li>
+            <li><a href="">活动中心</a></li>
+        </ul>
+    </div>-->
+</div>
+
+<div class="wrapper mt25">
+
+    <!--物品结算列表-->
+    <div id="goods_list">
+        <div id="t_tb_goods" class="bread pl15 darkgray">
+            <ul>
+                <li class="float-left t_checkbox"><input style="vertical-align: middle;" type="checkbox"/> 全选</li>
+                <li class="float-left t_goods">商品</li>
+                <li class="float-left t_props">&nbsp;</li>
+                <li class="float-left t_price">单价（元）</li>
+                <li class="float-left t_quantity">数量</li>
+                <li class="float-left t_sum">小计（元）</li>
+                <li class="float-left t_action">操作</li>
+            </ul>
+        </div>
+        <div class="shop_goods">
+            <div class="title weight">
+                <input style="vertical-align: middle;" type="checkbox"/> 某某珠宝店
+            </div>
+            <ul class="goods">
+                <li class="float-left cell p_checkbox"><input style="vertical-align: middle;" type="checkbox"/></li>
+                <li class="float-left cell p_goods">
+                    <div class="img_box float-left">
+                        <img src="images/1_03.png"/>
+                    </div>
+                    <div class="name_box float-left">
+                        <p>大圈圈打击我记录看就</p>
+                    </div>
+                </li>
+                <li class="float-left cell p_props">种类：黄金首饰</li>
+                <li class="float-left cell p_price">9999</li>
+                <li class="float-left cell p_quantity">
+                    <div class="counter"><a class="a_btn jian" id="jian">-</a><input value="0" type="text" class="num"/><a class="a_btn add" id="add">+</a></div>
+                </li>
+                <li class="float-left cell p_sum">99999</li>
+                <li class="float-left cell p_action">
+                    <a>删除</a>
+                </li>
+            </ul>
+
+            <div class="cl"></div>
+            <ul class="goods">
+                <li class="float-left cell p_checkbox"><input style="vertical-align: middle;" type="checkbox"/></li>
+                <li class="float-left cell p_goods">
+                    <div class="img_box float-left">
+                        <img src="images/1_03.png"/>
+                    </div>
+                    <div class="name_box float-left">
+                        <p>大圈圈打击我记录看就</p>
+                    </div>
+                </li>
+                <li class="float-left cell p_props">种类：黄金首饰</li>
+                <li class="float-left cell p_price">9999</li>
+                <li class="float-left cell p_quantity">
+                    <div class="counter"><a class="a_btn jian" id="jian">-</a><input value="0" type="text" class="num"/><a class="a_btn add" id="add">+</a></div>
+                </li>
+                <li class="float-left cell p_sum">99999</li>
+                <li class="float-left cell p_action">
+                    <a>删除</a>
+                </li>
+            </ul>
+
+            <div class="cl"></div>
+        </div>
+        <div class="shop_goods">
+            <div class="title weight">
+                <input style="vertical-align: middle;" type="checkbox"/> 某某珠宝店
+            </div>
+            <ul class="goods">
+                <li class="float-left cell p_checkbox"><input style="vertical-align: middle;" type="checkbox"/></li>
+                <li class="float-left cell p_goods">
+                    <div class="img_box float-left">
+                        <img src="images/1_03.png"/>
+                    </div>
+                    <div class="name_box float-left">
+                        <p>大圈圈打击我记录看就</p>
+                    </div>
+                </li>
+                <li class="float-left cell p_props">种类：黄金首饰</li>
+                <li class="float-left cell p_price">9999</li>
+                <li class="float-left cell p_quantity">
+                    <div class="counter"><a class="a_btn jian" id="jian">-</a><input value="0" type="text" class="num"/><a class="a_btn add" id="add">+</a></div>
+                </li>
+                <li class="float-left cell p_sum">99999</li>
+                <li class="float-left cell p_action">
+                    <a>删除</a>
+                </li>
+            </ul>
+            <div class="cl"></div>
+        </div>
+        <div class="cl"></div>
+        <div>
+            <div class="float-right">
+                <a class="sub_btn">去结算</a>
+            </div>
+            <div class="fs14 float-right mr10">
+                <p>已选择商品数：<span class="color-red fs14 weight">16</span></p>
+                <p>总价：<span class="color-red fs16 weight">$2000</span></p>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+</div>
+
+</div>
+<div class="cl"></div>
+
+<div class="footer mt20 fs12 darkgray">
+    <p>Copyright 2011 河南华晨消防设备有限公司 版权所有 豫ICP备14008323号</p>
+    <p>地址：郑州市经开区第二大街经北一路96号附1号 电话：0371-66335278 13608689359</p>
+</div>
+<script type="text/javascript">
+
+    $(function(){
+        $(".jian").click(
+                function(){
+                    var num = $(this).parent().find("input").val()*1;
+                    num -=1;
+                    $(this).parent().find("input").val(num);
+                }
+
+        );
+        $(".add").click(
+                function(){
+                    var num = $(this).parent().find("input").val()*1;
+                    num +=1;
+                    $(this).parent().find("input").val(num);
+                }
+        );
+    });
+</script>
+</body>
+</html>

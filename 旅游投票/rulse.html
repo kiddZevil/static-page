@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>首页</title>
+    <link type="text/css" href="css/common.css" rel="stylesheet"/>
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="contant">
+    <img style="width:100%;height: auto;" src="img/rulse.jpg">
+    <div style="height:56px;"></div>
+    <div class="fix_muse">
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"></i></div>
+            <div class="text-center colors">投票首页</div>
+        </div>
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"  style="background-position:-26px 0px"></i></div>
+            <div class="text-center colors">活动规则</div>
+        </div>
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"  style="background-position:-52px 0px"></i></div>
+            <div class="text-center colors">我要参赛</div>
+        </div>
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"  style="background-position:-78px 0px"></i></div>
+            <div class="text-center colors">奖项设置</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".abc").click(function () {
+            $(".abc").removeClass("active");
+            $(this).addClass("active");
+
+        });
+    });
+
+</script>
+</body>
+</html>

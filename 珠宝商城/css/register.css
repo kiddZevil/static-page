@@ -1,0 +1,63 @@
+/* CSS Document */
+input{outline: none;}
+.container{ width:1025px; margin:0 auto;}
+#header{ height:66px; padding:34px 0;}
+.logo{height: 47px;font-size: 20px;color: #666;}
+.logo span{ padding-left:10px; margin-left:20px; border-left:1px solid #666; color:#666; font-size:20px;}
+img{vertical-align:middle;}
+#main{background:url(../images/register_banner.jpg) center; height:509px;}
+#main>.container{ }
+.role{ height:509px; width:1190px;}
+.role>ul{ padding-top:220px; margin-left:-110px;list-style-type:none;}
+.role>ul>li{ float:left; width:166px; margin-left:110px; text-align:center;}
+.role>ul>li>a{ height:193px; width:166px; display:inline-block; line-height:490px; font-size:28px; color:#fff; text-decoration:none;}
+.xfgs{ background:url(../images/registers.png) no-repeat 0 0;}
+.xfgs:hover{ background:url(../images/registers.png) no-repeat 0 -201px;}
+.xfcj{ background:url(../images/registers.png) no-repeat -177px 0;}
+.xfcj:hover{background:url(../images/registers.png) no-repeat -177px -201px;}
+.sgd{ background:url(../images/registers.png) no-repeat -355px 0; }
+.sgd:hover{ background:url(../images/registers.png) no-repeat -355px -201px;}
+.zg_user{ background:url(../images/registers.png) no-repeat -532px 0;}
+.zg_user:hover{ background:url(../images/registers.png) no-repeat -532px -201px;}
+
+#register_main{ min-height:840px;}
+.register_div{ padding:135px 92px 0 25px;}
+.register_tit{ margin-top:-24px; height:120px; line-height:130px; padding-left:140px; font-size:26px;}
+.register_tit span{ color:#dd574b; font-size:26px; padding:0 5px;}
+.register_con{ padding-top:40px;}
+.register_table{ width:100%;}
+.register_table th{ width:255px; height:62px; padding:0 15px; text-align:right; font-size:14px;}
+.register_table th>span{ color:#dd574b; font-size:16px; padding:0 5px;}
+.register_table td{ padding:0 15px; height:62px;}
+.register_table td input[type="text"]{ height:32px; width:320px; border:1px solid #d9d9d9; margin-right:15px;
+	display:inline-block;
+	padding:0px;
+	margin-bottom:0px;
+	font-size:14px;
+	line-height:20px;
+	color:#666;
+	vertical-align:middle;
+	-webkit-border-radius:0px;/*标记*/
+	-moz-border-radius:0px;
+	border-radius:0px}
+.register_table td input[type="password"]{ height:32px; width:320px; border:1px solid #d9d9d9; margin-right:15px;
+	display:inline-block;
+	padding:0px;
+	margin-bottom:0px;
+	font-size:14px;
+	line-height:20px;
+	color:#666;
+	vertical-align:middle;
+	-webkit-border-radius:0px;/*标记*/
+	-moz-border-radius:0px;
+	border-radius:0px}
+.register_table td input[type="text"]:focus,.register_table td input[type="password"]:focus{ border:1px solid #e96800;}
+.register_table td input[type="checkbox"]{ margin-right:5px;}
+.register_table td a.xy{padding:0 5px; text-decoration:underline;cursor:pointer}
+.register_table td .dx_btn{ width:106px; height:32px; line-height:32px; text-align:center; background:#f7f7f7; border:1px solid #d9d9d9; color:#535353; display:inline-block;}
+.register_table td .submit_btn{ width:160px; height:40px; line-height:40px; color:#fff; text-align:center; font-size:16px; display:inline-block; background:#ff6600;border:0;}
+.register_table td .submit_btn:hover{background: #FF9650}
+
+
+#footer{ padding:20px 0 30px; margin-top:20px;}
+#footer p{ color:#666; text-align:center; line-height:28px; font-size:12px;}

@@ -1,0 +1,198 @@
+@charset "utf-8";
+/*顶部模块*/
+.index_top.user {
+    height: 25px;
+    background: #f5f5f5;
+    line-height: 25px;
+}
+.index_top.user ul li {
+    float: left;
+    padding-left: 25px;
+}
+.index_top .wrapper{margin: 0 auto;
+    width: 1026px;overflow: hidden;}
+.index_top .wrapper .header {
+    width: 1025px;
+    margin: 0 auto;
+}
+/*over*/
+
+
+/*用户页头部*/
+.user_header {
+    width: 1026px;
+    height: 117px;
+    line-height: 117px;
+    margin: 0 auto;
+
+}
+.user_header .logo_2{border-left: 1px solid #ccc;line-height: 28px;vertical-align:middle}
+/*end*/
+
+/*用户页导航*/
+.user_nav ul {
+    width: 1060px;
+    margin: 0 auto;
+}
+.user_nav {
+    margin-top: -86px;
+    height: 80px;
+    line-height: 50px;
+    border-bottom: 4px solid #1A3F83;
+}
+.user_nav ul{
+    font-weight: 600;
+    float: right;
+    width: 600px;
+}
+.user_nav ul li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    height: 50px;
+}
+
+.user_nav li:hover {
+    background: url(../images/arrow.png)no-repeat 52px 42px;
+}
+
+.user_nav ul li.this {
+    color: #ff6600;
+    background: url(../images/arrow.png)no-repeat 52px 42px;
+
+}
+
+.user_nav a {
+
+    color:inherit;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+/*over*/
+#main.wrapper{width: 1026px;margin: 0 auto;}
+#main.wrapper .bg {
+    background: url(../images/myproject.jpg) repeat-y;
+    min-height: 460px;
+    padding-bottom: 10px;
+}
+/*左道航模块*/
+.myproject {
+    width: 167px;
+    line-height: 35px;
+    padding-bottom: 10px;
+}
+
+.myproject h3 {
+    color: #a9d2ff;
+    margin: 20px 10px 15px 10px;
+    border-bottom: #3663a1 solid 1px;
+    padding: 0 10px 5px 10px;
+}
+
+.myproject ul li {
+    margin-top: 10px;
+}
+
+.myproject ul li:hover {
+    background: #1a4f9a;
+}
+
+.myproject ul li.this {
+    background: #005ead;
+
+}
+.myproject ul li .this_inner {
+    background: #fff;color:#1a4f9a;margin-left: 10px;
+}
+
+.myproject ul li a {
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+.zg_arrow{
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    left: 100px;
+    border-top: 4px solid #000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.zg_arrow_up{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 100px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid #000;
+}
+/*end*/
+
+/*商品列表模块*/
+.t_goods {width: 280px;padding-left: 15px;}
+.t_props{width: 180px;}
+.t_price{width: 100px;}
+.t_quantity{width: 140px;}
+.t_sum{width: 140px;}
+.t_action{width: 80px;}
+
+.shop_goods .title{padding-left: 15px;line-height:40px;border-bottom: 2px solid #aaa;}
+.shop_goods .cell{padding: 15px 0 10px;}
+.shop_goods .p_checkbox{padding-left: 15px; padding-right: 15px;}
+.shop_goods .p_goods{}
+.shop_goods .img_box{width: 80px;height:80px;border: 1px solid #ebebeb;margin-right: 10px;}
+.shop_goods .img_box img{width: 80px;height:80px;}
+.shop_goods .name_box p{font-size: 14px;width: 210px;margin-right: 10px;}
+
+.shop_goods .p_props {width: 180px;}
+.shop_goods .p_price{width: 100px;}
+.shop_goods .p_sum{width: 140px;}
+.shop_goods .p_quantity{width: 140px;}
+.shop_goods .p_action{width: 80px;}
+.cell{ height: 80px;
+    line-height: 20px;
+    overflow: hidden;  }
+    /*计数*/
+.shop_goods .counter{height: 16px;width: 76px;display: inline-block;border: 1px solid #cbcbcb;overflow: hidden;}
+.shop_goods .counter .a_btn{display: inline-block; margin-top: -1px; height: 18px;width: 16px;text-align: center;line-height: 18px;text-decoration: none;}
+.shop_goods .counter .num{display: inline-block; width: 42px;border: none;outline: none;text-align: center;border-right:1px solid #cbcbcb;border-left:1px solid #cbcbcb;vertical-align:top;}
+/*end*/
+
+/*shangping*/
+.shop_box2{float: right;width: 756px; }
+.shop_box2 a{margin-right: 5px;display: inline-block;width: 240px;height:296px;position: relative;}
+
+
+/*通用模块*/
+    /*结算按钮*/
+.sub_btn{background: #C81623;height: 52px;display: inline-block;text-align: center;line-height: 52px;
+    width:96px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;}
+.content {
+    width: 847px;
+}
+.bread {
+    background: #dff2fc;
+    height: 46px;
+    line-height: 46px;
+}
+.footer {
+    background: #f5f5f5;
+    height: 90px;
+    text-align: center;
+    padding-top: 22px;
+    line-height: 30px;
+}
+/*end*/

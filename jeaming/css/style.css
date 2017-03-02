@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*public head*/
+.wrapper{background: #fff;}
+.wrapper1{background: #ebebeb;}
+.header{height: 124px;width: 100%;overflow: hidden;background: #fff;}
+.topline{height: 16px;width: 100%;background: #0451A1;}
+
+/*the head > navigation*/
+.nav{margin: 0 auto;width: 1190px;}
+.nav .logo{margin-top: 24px;}
+.nav .nav_title{width: 904px;}
+.nav_title li{float: left;}
+.nav_title li .nav_a{font-size: 16px;padding: 42px 32px;display: block;}
+.nav_title li a.active{background:#0451A1;color: #fff;}
+
+/*public banner*/
+.header_banner{width: 100%;}
+
+/*solutions page*/
+.container{	width:1200px;overflow: hidden; margin:0 auto; margin-top: 70px;}
+.a_cases{display: inline-block; overflow: hidden;width: 370px;height:320px; margin-right: 24px;margin-bottom: 24px;}
+.img_cases{width: 370px;height:320px;}
+/*public footer*/
+.footer{background: #0451a1;text-align: center; padding-top:20px; padding-bottom:20px;margin-top: 10px;}
+
+/*public images transition*/
+.p_box{position: relative;}
+.p_size{ width: 1000px; height: 1000px; position: absolute; left: 50%; top: 50%; margin: -500px 0 0 -500px;text-align: center; }
+
+.p_zoom {
+    /* 缩放的元素 */
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform .2s;
+    transition: transform .2s;
+}
+.p_box:hover .p_zoom {
+    /* hover放大 */
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    zoom: 1.05;
+}
+:root .p_box:hover .p_zoom {
+    zoom: 1;
+}
+.p_middle {
+    /* 垂直居中 */
+    display: inline-block;
+    width: 0; height: 100%;
+    vertical-align: middle;
+}

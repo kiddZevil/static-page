@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Description" content="">
+    <title>首页</title>
+    <link type="text/css" href="css/common.css" rel="stylesheet"/>
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*新添css*/
+    .join_input{border: none;border-radius: 6px;height: 30px;width: 200px;}
+    .pd5-0{padding:5px 0;}
+    </style>
+</head>
+<body>
+<div class="contant">
+    <div class="index_header">
+        <img class="header_bg" src="img/join_bg.jpg"/>
+
+    </div>
+    <div class="inner_main" style="margin-top: -50%;margin-bottom: 20px;" >
+        <div class="title_box">
+            <img class="title_bg" src="img/title.png">
+            <div class="text-center title_word">信息填写</div>
+        </div>
+       
+
+        <!--新增输入信息-->
+        <div style="display:block; width: 280px; padding:6px;  margin: 0 auto;">
+            <div class="white pd5-0">请输入您的手机号:</div>
+            <div><input class="join_input"/></div>
+            <div class="white pd5-0">请输入您的口号:</div>
+            <div><input class="join_input"/></div>
+            <div class="white pd5-0">添加照片(最多可添加三张):</div>
+             <a href="#" style="display: block;">
+                   <!--此处是添加按钮-->
+                    <img src="img/add_img.jpg" style="width:44px;margin:2px;" />
+                    
+                    <img src="img/woman.jpg" style="width:44px;margin:2px;" />
+                    <img src="img/woman.jpg" style="width:44px;margin:2px;" />
+                    
+                </a>
+            <br/>
+        </div>
+        <!--输入信息end-->
+    </div>
+<div style="margin: 10px">
+        <a href="#" class="inner_btn text-center">
+            提 交
+        </a>
+    </div>
+
+    <div style="height:56px;"></div>
+    <div class="fix_muse">
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"></i></div>
+            <div class="text-center colors">投票首页</div>
+        </div>
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"  style="background-position:-26px 0px"></i></div>
+            <div class="text-center colors">活动规则</div>
+        </div>
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"  style="background-position:-52px 0px"></i></div>
+            <div class="text-center colors">我要参赛</div>
+        </div>
+        <div class="fl abc no_active">
+            <div class="text-center"><i class="footer_img"  style="background-position:-78px 0px"></i></div>
+            <div class="text-center colors">奖项设置</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(function(){
+
+        $(".qqqq").click(function () {
+            $(this).focus();
+          
+        });
+        $(".abc").click(function () {
+            $(".abc").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+
+</script>
+</body>
+</html>

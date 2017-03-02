@@ -1,0 +1,121 @@
+/* CSS Document */
+/*通用模块*/
+.red{ color:#ff6600;}
+.container{ width:1025px; margin:0 auto;}
+/**/
+
+/*banner和入口*/
+.banner{ height:393px; background:url(../images/pt_banner.jpg) center;}
+
+/*我们的优势模块*/
+#index_superiority .entrance{ height:318px; width: 1040px;margin:18px auto; overflow: hidden;}
+#index_superiority .entrance>a{ float:left; width:238px; height:318px; margin-right:8px;margin-left: 8px;}
+#index_superiority .yys_a{ background:url(../images/4332_03.jpg);}
+#index_superiority .xfgs_a{ background:url(../images/4332_05.jpg);}
+#index_superiority .xfcj_a{ background:url(../images/4332_07.jpg);}
+#index_superiority .sgd_a{ background:url(../images/4332_09.jpg); }
+#index_superiority.serve_2{background: url(../images/sever2.jpg)  center; }
+
+/*服务模块*/
+#index_services.serve_1{background: url(../images/sever1.jpg)  center;height: 443px; }
+/*选择模块*/
+#index_choose.serve_3{background: url(../images/dian.jpg) center ; }
+#index_choose .contain{ width: 1040px;margin:18px auto; overflow: hidden;}
+#index_choose .img_box{width: 118px;height:118px;overflow: hidden;border-radius: 50%;float: left;}
+/*注入模块*/
+#index_enter.serve_3{background: url(../images/banner4.jpg) center; }
+#index_enter .contain{ width: 1040px;margin:18px auto; overflow: hidden;}
+#index_enter .img_box{width: 118px;height:118px;overflow: hidden;border-radius: 50%;float: left;}
+
+/*返回顶部模块*/
+#gotoTop{
+		display:none;position:fixed;top:80%;right: 20px;
+		cursor:pointer;
+		width:64px;
+		height: 48px;
+		border:1px solid #e0e0e0;
+		background:url(../images/icons.png)0 -89px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; }
+/*用CSS表达式(expression)来实现ie6下position:fixed效果*/
+#gotoTop{_position:absolute;_top:expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px")}
+#gotoTop.hover{background:url(../images/icons.png)0 -141px;text-decoration:none;}
+/*over*/
+
+/*顶部模块*/
+#index_top.user {
+	height: 25px;
+	background: #f5f5f5;
+	line-height: 25px;
+}
+#index_top.user ul li {
+	float: left;
+	padding-left: 25px;
+}
+#index_top .wrapper{margin: 0 auto;
+	width: 1026px;overflow: hidden;}
+#index_top .wrapper .header {
+	width: 1025px;
+	margin: 0 auto;
+}
+/*over*/
+
+/*头部模块*/
+#index_header{width: 1025px;margin: 0 auto;}
+#index_header .logo{ height:80px; width:200px; float:left;line-height: 80px;text-align: center;}
+#index_header .nav {
+	float: right;
+	height: 80px;
+	line-height: 50px;
+	overflow: hidden;
+}
+#index_header .nav ul{
+	padding-top: 14px;
+	font-weight: 600;
+	font-size: 16px;
+}
+#index_header .nav ul li {
+	float: left;
+	width: 120px;
+	text-align: center;
+	height: 50px;
+}
+#index_header .nav li:hover {
+	background: url(../images/arrow.png)no-repeat 52px 42px;
+}
+#index_header .nav ul li.this {
+	color: #ff6600;
+	background: url(../images/arrow.png)no-repeat 52px 42px;
+
+}
+#index_header .nav a {
+	color:inherit;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+/*over*/
+/*通用模块*/
+.index_titles .title{font-size: 35px;}
+/*over*/
+/*map模块*/
+#index_contact {
+	overflow: hidden;
+	padding-bottom: 52px;
+}
+
+#index_contact #container {
+	text-align: center;
+	height: 400px;
+	width: 100%;
+}
+#index_contact .contact_end {
+	text-align: center;
+	margin-top: 54px;
+}
+
+/*底部模块*/
+/*public footer*/
+#footer{background: #0451a1;text-align: center; padding-top:20px; padding-bottom:20px;margin-top: 10px;}

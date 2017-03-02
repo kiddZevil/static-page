@@ -1,0 +1,64 @@
+/*index*/
+*{padding: 0px;margin: 0px;font-family: "Microsoft YaHei UI"}
+.cl{clear: both;}
+.fl{float: left}
+.fr{float: right}
+.white{color:#fff;}
+.yellow{color: #fef206;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.contant{max-width: 1242px;overflow: hidden;margin: 0 auto;position: relative;}
+.index_header{display: block; width: 100%;}
+.header_bg{width: 100%;height: auto;z-index: -9;}
+
+.index_main{padding:0 4%;margin-top: -20px;z-index: 10;}
+.index_search{}
+.index_search_border{border-radius: 4px;overflow: hidden;  display: inline-block;border: 2px solid #fe609f;}
+.index_search_input{width: 104px;height: 24px;border: none;padding-left: 6px;}
+.index_search_btn{display: inline-block;margin-left: -8px; background: #fdf400;height:24px;width: 56px; text-decoration: none;border: none;border-left:2px solid #fe609f;}
+.index_total{margin-top:12px; height:56px;z-index: 10;position: relative;}
+.w30{width: 33%;}
+.index_total_word{z-index: 11;padding: 4px;font-size: 16px;}
+.index_total_num{font-size: 14px;}
+
+
+.poll{margin-top: 40px;}
+.poll_box{display:inline-block;margin-bottom: 36px;margin-left: 6px;position: relative;}
+.poll_img_box{display: inline-block;overflow: hidden;  width: 140px; height:148px;position: relative;}
+.poll_img{width: 140px; height:auto;}
+.poll_img_inf{width:140px;background: rgba(0,0,0,0.8);position: absolute;bottom:0px;}
+.poll_name{font-size: 12px;padding: 4px;}
+.poll_num{font-size: 12px;padding: 4px;color:#ccc;}
+.poll_btn{position:absolute;bottom:-20px; line-height: 28px; display: block;width: 140px;height:28px;background: #fe609f;}
+.index_footer{display: block; margin-top: -90%; z-index: -10;}
+.fix_muse{z-index: 1000; overflow: hidden; height: 60px;width: 100%;position: fixed;bottom: 0px;}
+/*未选中时*/
+.no_active{height: 60px;background: #222;width: 25%;}
+.no_active .footer_img{margin-top: 8px; background: url(../img/footer1.png);display:inline-block;height: 27px;width: 26px;}
+.no_active .colors{color: #fff;font-size: 12px;}
+/*选中时*/
+.active{height: 60px;background: #f9bc23;width: 25%;}
+.active .footer_img{margin-top: 8px; background: url(../img/footer2.png);display:inline-block;height: 27px;width: 26px;}
+.active .colors{color: #000;font-size: 12px;}
+
+
+/*信息内页inner*/
+.inner_main_header{margin: 0 auto; position: relative;margin-top: -116%; height:100px;width: 100px;}
+.inner_header_box{height:100px;width: 100px;border-radius: 50%;border: 4px solid #fe609f;overflow: hidden;}
+.inner_header_img{height:auto;width: 100px;}
+.inner_inf_box{background: url(../img/infs.png);width: 80px; height: 57px;position: absolute;top: -20px;right: -80px;}
+.inf1{font-size: 14px;margin-top: 4px;}
+.inf2{font-size: 12px;background: #fe609f;border-radius: 10px;width: 56px;margin: 0 auto;}
+
+.inner_main{ padding-bottom: 8px; margin-top: 30%; margin-right: 10px;margin-left: 10px; position: relative;background: #fe609f;border-radius: 12px; }
+.title_box{width:180px; margin: 0 auto;position: relative;top:-30px;}
+.title_bg{width:180px;height: auto;}
+.title_word{color:#691e00;font-size: 18px;font-weight: 600; margin-top: -40px;}
+
+.words_box{position: relative; width:270px;height: 100px; margin: 0px auto;overflow: hidden;}
+.words_bg{width:270px;height: auto;}
+.words_word{height: 100px;overflow-y: auto; color:#691e00;font-size: 14px; margin: -200px auto;line-height: 24px;padding: 10px;color:white;}
+.inner_img_box{margin: 10px auto;}
+.inner_img{width: 270px; height:auto;display: block;margin: 2px auto;position: relative;}
+.inner_img_inf{margin: 6px auto;font-size: 14px;position: relative;}
+.inner_btn{display: block;background: #f9bc23;color: #691e00;font-size: 18px;border-radius: 8px;width: 100%;height:32px;line-height:32px;position: relative;}

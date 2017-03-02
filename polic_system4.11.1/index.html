@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <title>我的应用</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+
+</head>
+<body style="background: url(images/add_bg.jpg); background-size: 100%;">
+    <div class="index_nav">
+        <div style="height:12px;"></div>
+        <ul class="fl">
+            <li class="fl">
+                <img class="index_logo" src="images/logo.png" />
+            </li>
+            <li class="nav_title white fl">
+                南阳公安局信息资源应用门户平台
+            </li>
+        </ul>
+        <ul class="fr">
+            <li  class="fl one_force">
+                <i class="line"></i>&nbsp;
+                <span class="nav_time white">
+                    2016年3月15日
+                </span>
+                <span class="nav_time white">
+                    星期二
+                </span>
+                <span class="nav_time white">
+                    10:20:32
+                </span>
+                &nbsp;
+                <i class="line"></i>
+                &nbsp;
+            </li>
+            <li class="fl">
+                <a class="nav_btn" style="background-position-y: -6px">
+                </a>
+            </li>
+            <li class="fl">
+                <a class="nav_btn"  style="background-position-y: -46px">
+                </a>
+            </li>
+            <li class="fl">
+                <a class="nav_btn"  style="background-position-y: -86px" >
+                </a>
+            </li>
+            <li class="fl">
+                <a class="nav_btn"  style="background-position-y: -126px">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="top_mat"></div>
+    <div class="index_main">
+        <div class="main_menus">
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_01.png">
+                    <div class=""><img class="menus_icon" src="images/icon1.png"></div>
+                    <div class="white menus_word">研判</div>
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_02.png">
+                    <img class="menus_icon_add" src="images/add.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_03.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_04.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_10.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_11.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_12.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_13.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_14.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_15.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_16.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_17.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_18.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_19.png">
+                </a>
+            </div>
+            <div class="main_menus_box">
+                <a class="main_menus_btn">
+                    <img class="menus_bg" src="images/cards/cards_20.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom_mat"></div>
+    <div class="index_footer">
+        <div class="footer_nav">
+            <div class="footer_nav_btns" style="background: url(images/bottom_on.png);background-size: 100%;">
+                <div class="footer_nav_icon"></div>
+                <div class="footer_nav_word white">应用集体</div>
+            </div>
+            <span style="width: 32px;display: inline-block;"></span>
+            <div class="footer_nav_btns" style="background-size: 100%;">
+                <div class="footer_nav_icon" style="background-position: -36px -46px;"></div>
+                <div class="footer_nav_word white">我的应用</div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function () {
+       $(".footer_nav_btns").click(function () {
+           $(".footer_nav_btns").css({"background":"url(images/bottom_off.png)","background-size":"100%"});
+           $(".footer_nav_btns").children(".footer_nav_icon").css({"background-position-y":"-46px"});
+           $(this).css({"background":"url(images/bottom_on.png)","background-size":"100%"});
+           $(this).children(".footer_nav_icon").css({"background-position-y":"0px"});
+       });
+            $(".main_menus_btn").mousedown(function () {
+                $(this).css({"margin-top":"2px"});
+            });
+        $(".main_menus_btn").mouseup(function () {
+            $(this).css({"margin-top":"0px"});
+        });
+
+        //alert();
+    });
+</script>
+</body>
+</html>

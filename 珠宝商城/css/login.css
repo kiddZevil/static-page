@@ -1,0 +1,37 @@
+/* CSS Document */
+*{margin:0px; padding:0px; color:#333; list-style:none; font-family:Arial,Verdana, '微软雅黑'; text-decoration:none;}
+input{outline: none;}
+.orange{color: #ff6600;}
+.container{ width:1025px; margin:0 auto;}
+.header {
+    height: 90px;
+    position: relative;
+    width: 1025px;
+    margin: 0 auto;
+}
+.logo_2{border-left: 1px solid #ccc;line-height: 28px;vertical-align: middle}
+.main{ height:604px;background:url(../images/login_banner.jpg)center;}
+.login_div{ width:280px; height:460px; padding:30px 36px 0px; background:#fff; border:1px solid #bdbdbd; box-shadow:0px 2px 1px #000; float:right; position:relative; top:52px;}
+.wel{ font-size:20px;}
+/*
+.tishi{ border:1px solid #d2101b; background:#ffebeb; height:24px; line-height:24px; text-indent:1em; color:#d2101b; font-size:12px; margin:10px 0;}
+*/
+.login_div input[type="text"],.login_div input[type="password"]{ height:38px; width:240px; color:#666; border:1px solid #d2d2d2; margin-top:25px; padding-left:38px; font-size:14px;}
+.login_div input[type="text"]:focus,.login_div input[type="password"]:focus{ border:1px solid #005EAD;}
+.login_div input.yzm{ width:155px; margin-right:5px; vertical-align:top;}
+.login_div input.user{ margin-top:0px;}
+.login_div img{ height:40px; margin-top:25px;}
+.login_div .login_left{ position:absolute; left:-16px; top:-1px; border-bottom:16px solid #999; border-left:16px solid transparent;}
+.login_div .login_right{ position:absolute; right:-16px; top:-1px; border-bottom:16px solid #999; border-right:16px solid transparent;}
+#checkbox{display: inline-block;width: 14px;height: 14px;background: url(../images/icons.png);background-position:  -450px -41px; margin-right: 10px;}
+.login_user{ background:url(../images/icons.png) no-repeat -485px -1px; }
+.pwd{ background:url(../images/icons.png) no-repeat -485px -39px;}
+.wpwd{ color:#005ead; text-align:right; font-size:14px; margin-top:15px;}
+.xlogin{ font-size:14px; margin-top:10px;}
+.xlogin>input{ margin-right:10px; vertical-align:middle;}
+.login_btn{ width:280px; height:40px; line-height:40px; text-align:center; margin-top:20px; color:#fff; border-bottom:3px solid #d6d6d6; background:#ff6600; display:inline-block; font-size:16px;}
+.register_btn{ width:280px; height:40px; line-height:40px; text-align:center; margin-top:15px; color:#fff; border-bottom:3px solid #d6d6d6; background:#12468f; display:inline-block; font-size:16px;}
+
+.footer{ margin-top:90px;}
+.footer>.container{ border-top:2px solid #f5f5f5;padding:20px 0 30px;}
+.footer p{ color:#666; text-align:center; line-height:28px; font-size:12px;}

@@ -1,0 +1,563 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>首页</title>
+    <meta name="Keywords" content="关键词,关键词">
+    <meta name="Author" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=您申请的key值"></script>
+    <style type="text/css">
+        /*main > top banner*/
+        .bannerbox #banners {
+            width: 100%;
+            height: 644px;
+            background: #666;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bannerbox #banners #banner1 {
+        }
+
+        .n_show {
+            height: 644px;
+            overflow: hidden;
+            font-size: 140px;
+            color: #82AFFF;
+            line-height: 640px;
+            text-align: center;
+        }
+
+        .pn {
+            display: block;
+            position: absolute;
+            width: 51px;
+            height: 134px;
+            z-index: 1000;
+            top: 257px;
+            background: url(images/change1.png) -12px 0;
+            opacity: 0.8;
+            transition: opacity .6s ease;
+        }
+
+        .pn:hover {
+            background: url(images/change2.png) -12px 0;
+            transition: opacity .6s ease;
+        }
+
+        #prev {
+            left: 0;
+        }
+
+        #next {
+            right: 0;
+        }
+
+        /*banner标题*/
+        .b_title {
+            background: url(images/indextitles.png);
+            height: 132px;
+            width: 206px;
+            margin: 56px auto;
+        }
+
+        .business {
+            min-height:400px;
+            background: url(images/b_bg.jpg);
+            padding-bottom: 56px;
+            overflow: hidden;
+        }
+
+        .business .b_btns {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .business .b_btns .b_btn1 {
+            display: block;
+            float: left;
+            height: 228px;
+            width: 186px;
+            margin-right: 84px;
+        }
+
+        .business .b_btns .b_btn1:last-child {
+            margin-right: 0px;
+        }
+
+        .business .b_btns .b_btn1 .btn1 {
+            overflow: hidden;
+            position: relative;
+            width: 186px;
+            height: 189px;
+        }
+
+        .business .b_btns .b_btn1 .btn1 .fan1 {
+            display: block;
+            width: 186px;
+            height: 189px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+        }
+
+        .business .b_btns .b_btn1 .btn1 .fan2 {
+            display: block;
+            width: 0px;
+            height: 189px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 99;
+        }
+
+        .business .b_btns .b_btn1 p {
+            margin-top: 26px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .business .b_btns .b_btn1 .btn_more {
+            margin-top: 26px;
+            font-size: 15px;
+            text-align: center;
+            display: none;
+        }
+
+        .business .b_btns .b_btn1:hover .btn1 {
+            -ms-background-position-y: -229px;
+            background-position-y: -229px;
+        }
+
+        .business .b_btns .b_btn1:hover p {
+            display: none;
+        }
+
+        .business .b_btns .b_btn1:hover .btn_more {
+            display: block;
+        }
+
+        .solve {
+            background: url(images/bg_solve.png);
+            padding-bottom: 52px;
+            overflow: hidden;
+        }
+
+        .solve .solve_btns {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .solve .solve_btns .solve_btn1 {
+            background: #141414;
+            margin: 0 0 14px 15px;
+            box-shadow: 5px 5px 8px #444;
+            width: 280px;
+            height: 160px;
+            overflow: hidden;
+            float: left;
+            display: inline-block;
+        }
+
+        .solve_img1 {
+            width: 283px;
+            height: 160px;
+        }
+
+        .solve_more {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .news {
+            overflow: hidden;
+            padding-bottom: 52px;
+        }
+
+        .news .news_main {
+            margin: 0 auto;
+            width: 1200px;
+            position: relative;
+            background: url("images/newsbg.png")
+        }
+
+        .news .news_main .news_line {
+            position: absolute;
+            top: 0px;
+            width: 1200px;
+            text-align: center;
+        }
+
+        .news_words {
+            width: 560px;
+            height: 70px;
+            overflow: hidden;
+            margin-bottom: 14px;
+        }
+
+        .news_words .news_words2 {
+            line-height: 20px;
+            margin-top: 6px;
+        }
+
+        .about {
+            overflow: hidden;
+            padding-bottom: 52px;
+            background: url("images/about.png")
+        }
+
+        .about .about_words {
+            width: 960px;
+            margin: 0 auto;
+
+        }
+
+        .about .about_words p {
+            line-height: 2em;
+        }
+
+        .contact {
+            overflow: hidden;
+            padding-bottom: 52px;
+        }
+
+        #container {
+            text-align: center;
+            height: 400px;
+            width: 100%;
+        }
+
+        .contact_end {
+            text-align: center;
+            margin-top: 54px;
+        }
+
+        .contact_words {
+        }
+
+        .contact_img {
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="topline"></div>
+    <div class="nav">
+        <div class="fl logo">
+            <img src="images/zzlogo.png">
+        </div>
+        <ul class="fr nav_title">
+            <li><a href="#" class="nav_a active">首页</a></li>
+            <li><a href="#" class="nav_a">新闻动态</a></li>
+            <li><a href="#" class="nav_a">产品案例</a></li>
+            <li><a href="#" class="nav_a">关于我们</a></li>
+            <li><a href="#" class="nav_a">加入我们</a></li>
+            <li><a href="#" class="nav_a">联系我们</a></li>
+            <li><a href="#" class="nav_a">售后服务</a></li>
+        </ul>
+    </div>
+</div>
+<div id="bannerbox" class="bannerbox">
+
+    <div id="banners">
+        <a href="javascript:void(0);" class="pn" id="prev"></a>
+        <a href="javascript:void(0);" class="pn" id="next" style="background-position:62px 0;"></a>
+
+        <ul id="banner1">
+            <li class="n_show">1</li>
+            <li style="display:none" class="n_show">2</li>
+            <li style="display:none" class="n_show">3</li>
+        </ul>
+    </div>
+    <div>
+        <div class="cl"></div>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var clock = null;
+                var index = 0;
+                var length = $("#banner1 li").length;
+                //下一张按钮
+                $("#next").click(function () {
+                    index++;
+                    if (index == length)index = 0;
+
+                    $("#banner1").find("li").eq(index).fadeIn().siblings().fadeOut();
+
+                });
+                //上一张按钮
+                $("#prev").click(function () {
+                    index--;
+                    if (index == -1)index = length - 1;
+                    $("#banner1").find("li").eq(index).fadeIn().siblings().fadeOut();
+
+                });
+                //自动轮播控制器
+                function timer() {
+                    clock = setInterval(function () {
+                        $("#next").click();
+                    }, 2000);
+                }
+
+                timer();
+                $(".pn").hover(function () {
+                    clearInterval(clock);
+                }, function () {
+                    timer();
+                });
+            });
+        </script>
+    </div>
+    <!-- 第二banner业务领域 -->
+    <div id="123" class="business">
+        <h1 class="b_title" id="1234"></h1>
+        <div style="display: none;" class="b_btns">
+            <a class="b_btn1" href="#">
+                <div class="btn1">
+                    <img class="fan1" src="images/images/b_btn_01.png"/>
+                    <img class="fan2" src="images/images/b_btn_12.png"/>
+                </div>
+                <p>企业管理应用软件开发</p>
+                <h2 class="btn_more"><img src="images/more.png"></h2>
+            </a>
+            <a class="b_btn1" href="#">
+                <div class="btn1">
+                    <img class="fan1" src="images/images/b_btn_03.png"/>
+                    <img class="fan2" src="images/images/b_btn_13.png"/>
+                </div>
+                <p>电子商务平台开发</p>
+                <h2 class="btn_more"><img src="images/more.png"></h2>
+            </a>
+            <a class="b_btn1" href="#">
+                <div class="btn1">
+                    <img class="fan1" src="images/images/b_btn_05.png"/>
+                    <img class="fan2" src="images/images/b_btn_14.png"/>
+                </div>
+                <p>移动平台开发</p>
+                <h2 class="btn_more"><img src="images/more.png"></h2>
+            </a>
+            <a class="b_btn1" style="margin-right: 0px" href="#">
+                <div class="btn1">
+                    <img class="fan1" src="images/images/b_btn_07.png"/>
+                    <img class="fan2" src="images/images/b_btn_15.png"/>
+                </div>
+                <p>网站定制开发</p>
+                <h2 class="btn_more"><img src="images/more.png"></h2>
+            </a>
+        </div>
+        <div class="cl"></div>
+    </div>
+    <div class="cl"></div>
+    <script type="text/javascript">
+        $(function () {
+            var _1 = $(".fan1");
+            var _2 = $(".fan2");
+            var w = _1.width();
+            var w_half = w / 2;
+            var abc = 0;
+            _2.css({width: "0px", left: w_half});
+            $(".btn1").hover(function () {
+                $(this).find(".fan1").animate({width: "0px", left: w_half}, 80, function () {
+                    $(this).parent().find(".fan2").animate({width: w, left: "0px"}, 80, function () {
+                        return abc = 1;
+                    });
+                });
+            }, function () {
+
+                $(this).find(".fan2").animate({width: "0px", left: w_half}, 80, function () {
+                    $(this).parent().find(".fan1").animate({width: w, left: "0px"}, 80, function () {
+                        _2.css({width: "0px", left: w_half})
+                    });
+                });
+            });
+        });
+    </script>
+    <!-- 第三banner解决方案 -->
+    <div  class="solve">
+        <h1 class="b_title" style="background-position:0 140px;"></h1>
+        <div class="solve_btns">
+
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <a class="solve_btn1 p_box" href="#">
+                <div class="p_size">
+                    <img class="p_zoom solve_img1" src="images/btn_solve.png"/>
+                    <i class="p_middle"></i>
+                </div>
+            </a>
+            <div class="cl"></div>
+        </div>
+        <div class="solve_more">
+            <a href="#">
+                <img src="images/more.png"/>
+            </a>
+        </div>
+    </div>
+    <!-- 新闻资讯 -->
+    <div class="news">
+        <h1 class="b_title" style="background-position:0 -140px;"></h1>
+        <div class="news_main">
+            <!--<div class="news_line"><img src="images/newsline.png"/></div>-->
+            <div class="news_words fr tl">
+                <p class="black0 f16">我们正正软件公司正式新入驻河南中部电子产业园</p>
+				<span class="news_words2 tmui-ellipsis f14 black9">我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自们自己的家我们自
+己的家我们自己的家我们自己的</span>
+            </div>
+            <div class="news_words fl tr">
+            </div>
+            <div class="news_words fr tl">
+            </div>
+            <div class="news_words fl tr">
+                <p class="black0 f16">我们正正软件公司正式新入驻河南中部电子产业园</p>
+				<span class="news_words2 tmui-ellipsis f14 black9">我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自们自己的家我们自
+己的家我们自己的家我们自己的</span>
+            </div>
+            <div class="news_words fr tl">
+                <p class="black0 f16">我们正正软件公司正式新入驻河南中部电子产业园</p>
+				<span class="news_words2 tmui-ellipsis f14 black9">我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自们自己的家我们自
+己的家我们自己的家我们自己的</span>
+            </div>
+            <div class="news_words fl tr">
+            </div>
+            <div class="news_words fr tl">
+            </div>
+            <div class="news_words fl tr">
+                <p class="black0 f16">我们正正软件公司正式新入驻河南中部电子产业园</p>
+				<span class="news_words2 tmui-ellipsis f14 black9">我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自们自己的家我们自
+己的家我们自己的家我们自己的</span>
+            </div>
+            <div class="news_words fr tl">
+                <p class="black0 f16">我们正正软件公司正式新入驻河南中部电子产业园</p>
+				<span class="news_words2 tmui-ellipsis f14 black9">我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自己的家我们自们自己的家我们自
+己的家我们自己的家我们自己的</span>
+            </div>
+            <div class="cl"></div>
+        </div>
+        <h2 class="solve_more"><a href="#"><img src="images/more.png"/></a></h2>
+    </div>
+    <!--关于我们-->
+    <div style="display: none;" class="about">
+        <h1 class="b_title" style="background-position:0 -290px;"></h1>
+        <div class="about_words">
+            <p class="white f14 tc">
+                河南正正互联网科技有限公司(CentralTech)2014年成立于中国郑州，是河南华晨消防设备有限公司投资的全资子公司。依托母公司优势，主要从事消防行业的业务优化咨询，同时提供包括生产制造执行(MES)、工厂自动化（FAS）、生产计划与排程(APS)、良率管控（YMS）、商业智能（BI）、企业资源管理（ERP）等专业产品。
+                河南正正互联网科技有限公司是郑州市政府认证的高新技术企业...</p>
+        </div>
+        <div class="about_cards">
+            <div class="about_card1">
+                <div class="card_small">3</div>
+                <p class="f14 white"></p>
+            </div>
+        </div>
+    </div>
+    <!--联系我们-->
+    <div class="contact">
+        <h1 class="b_title" style="background-position:0 -430px;"></h1>
+        <div id="container"></div>
+        <div class="contact_end">
+            <span class="contact_words f20">有新意</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="f20">有新意</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="f20">有新意啊</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><img src="images/qq.png"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><img src="images/erweima.png"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="f20">欢迎致电 15542896652</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </div>
+    </div>
+    <script>
+        var map = new AMap.Map('container');
+        var map = new AMap.Map('container', {
+            zoom: 20,
+            center: [113.75726938, 34.71788908]
+        });
+        var marker = new AMap.Marker({
+            position: [113.75726938, 34.71788908],
+            map: map
+        });
+    </script>
+</div>
+<div class="footer">
+    <br/>
+    <p class="white f12 ">Copyright 2011 河南省迹铭网络科技有限公司 版权所有豫ICP备14008323号不对</p>
+    <br/>
+    <p class="white f12 ">地址：郑州市经开区第六大街经南二路月太软件园 电话：123321</p>
+    <br/>
+</div>
+<script type="text/javascript">
+    $(function () {
+       /* var win_h = document.documentElement.clientHeight;
+        if (win_h>800){
+            $(".b_title").fadeIn(1000);
+            $(".b_btns").fadeIn(1000);
+        }*/
+        window.onscroll = function(){
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
+            var top = document.getElementById("123").getBoundingClientRect().top //元素顶端到可见区域顶端的距离
+            var se = document.documentElement.clientHeight //浏览器可见区域高度。
+            if(top <= se-50 && top >-300 ) {
+               $("#1234").fadeIn(1000);
+            }else{
+                $("#1234").hide();
+
+            }
+            if(top <= se-200 && top >-400 ) {
+                $(".b_btns").fadeIn(1000);
+            }else{
+                $(".b_btns").hide();
+
+            }
+            console.log(top);
+        }
+    });
+</script>
+
+</body>
+</html>
